@@ -1,4 +1,92 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
+
+html{
+    overflow: hidden;
+}
+
+body {
+    background-color: #1D1C20;
+}
+
+div {
+    margin-top: 3%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p, h1 {
+    color: #ffffff;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4em;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 8%;
+}
+
+span{
+    font-style: bold;
+    color:  #3AD5AA;
+}
+
+button {
+    background: #3AD5AA;
+    border: none;
+    height: 130px;
+    width: 380px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 52px 0px rgba(58, 213, 169, 1);
+    -moz-box-shadow: 0px 0px 52px 0px rgba(58, 213, 169, 1);
+    box-shadow: 0px 0px 52px 0px rgba(58, 213, 169, 1);
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h5 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1em;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 1%;
+}
+
+p#texte {
+    padding-top: 3%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2em;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+p#compteur{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 3em;
+line-height: 73px;
+text-align: center;
+color: #FFFFFF;
+display: none;
+}
+
