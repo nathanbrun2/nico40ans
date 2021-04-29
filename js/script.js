@@ -4,12 +4,7 @@ window.onload = function () {
 
     button.onclick = function () {
         var div = document.getElementById('compteur');
-        if (div.style.display !== 'none') {
-            div.style.display = 'none';
-        }
-        else {
-            div.style.display = 'block';
-        }
+        div.style.display = 'block';
     };
 
     //Lancer la fontction chaque seconde
