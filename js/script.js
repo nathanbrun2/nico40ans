@@ -19,8 +19,8 @@ window.onload = function () {
 
             var prefixe = "Nico a 40 ans dans ";
             if (total_secondes < 0) {
-                prefixe = "Nico a 40 ans et "; // On modifie le préfixe si la différence est négatif
-                total_secondes = Math.abs(total_secondes); // On ne garde que la valeur absolue
+                prefixe = "Nico a 40 ans depuis ";
+                total_secondes = Math.abs(total_secondes); 
             }
 
             if (total_secondes > 0) {
@@ -74,8 +74,8 @@ window.onload = function () {
                 document.getElementById("texte").innerHTML = prefixe
                 document.getElementById("compteur").innerHTML = jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
             }
-            else {
-                window.alert('NICO A 40 ANS !');
+            if (total_secondes <= 1) {
+                alert("BON ANNIV !");
             }
 
         }
