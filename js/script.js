@@ -1,7 +1,7 @@
 window.onload = function () {
 
     var button = document.getElementById('button');
-
+    var audio = new Audio('chanson.mp3');
     button.onclick = function () {
         var div = document.getElementById('compteur');
         div.style.display = 'block';
@@ -14,7 +14,7 @@ window.onload = function () {
             var compte_a_rebours = document.getElementById("compte_a_rebours");
 
             var date_actuelle = new Date();
-            var date_evenement = new Date("May 1 02:57:00 2021");
+            var date_evenement = new Date("May 1 22:57:00 2021");
             var total_secondes = (date_evenement - date_actuelle) / 1000;
 
             var prefixe = "Nico a 40 ans dans ";
@@ -75,7 +75,8 @@ window.onload = function () {
                 document.getElementById("compteur").innerHTML = jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
             }
             if (total_secondes <= 1) {
-                alert("BON ANNIV !");
+                alert("BON ANNIV NICO !");
+                audio.play();
             }
 
         }
